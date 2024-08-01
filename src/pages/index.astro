@@ -3,17 +3,25 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Luna - Inicio">
+
+	<header class="text-white ">
+		<div class=" flex justify-between place-items-center">
+			<div class="mx-auto pl-24 pt-5">
+				<h1 class="">
+					App <span class="text-gradient">Luna</span>
+				</h1>
+			</div>
+
+			<button class="p-5 pt-[0px] hover:text-purple-400">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				</svg>			
+			</button>
+		</div>
+	</header>
+
 	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
 			<path
 				fill-rule="evenodd"
 				clip-rule="evenodd"
@@ -33,34 +41,48 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+
+		<div class="md:">
+			<ul class="grid gap-5 pb-4 overflow-y-auto">
+				<Card
+					href=""
+					title="Anuncio 1"
+					body=""
+				/>
+				<Card
+					href=""
+					title="Anuncio 2"
+					body=""
+				/>
+				<Card
+					href=""
+					title="Anuncio 3"
+					body=""
+				/>
+				<Card
+					href=""
+					title="Anuncio 4"
+					body=""
+				/>
+				<Card
+					href=""
+					title="Anuncio 5"
+					body=""
+				/>
+				<Card
+					href=""
+					title="Anuncio 6"
+					body=""
+				/>
+				<Card
+					href=""
+					title="Anuncio 7"
+					body=""
+				/>
+			</ul>
+		</div>
 	</main>
+
 </Layout>
 
 <style>
@@ -114,10 +136,5 @@ import Card from '../components/Card.astro';
 	.instructions strong {
 		color: rgb(var(--accent-light));
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+
 </style>
